@@ -1,8 +1,4 @@
-# Kubernetes
-
-## Indice
-
-## Como instalar
+# Instalacion
 
 1. Instalar Docker
 
@@ -75,67 +71,4 @@ minikube addons enable registry
 
 ```bash
  eval $(minikube docker-env)
-```
-
-## Comandos basicos
-
-1. ver comandos basicos
-
-```bash
-kubectl --help
-minikube --help
-```
-
-2. ver nodos activos
-
-```bash
-kubectl get nodes
-```
-
-3. ver pods activos
-
-```bash
-kubectl get pods
-```
-
-4. ver contenedores activos
-
-```bash
-docker ps
-```
-
-5. ver imagenes creadas
-
-```bash
-docker images
-```
-
-6. ver pluggins disponibles de minikube
-
-```bash
-minikube addons list
-```
-
-7. ver contextos
-
-```bash
-kubectl config get-contexts
-```
-
-8. cambiar de contexto
-
-```bash
-kubectl config use-context <nombre del contexto>
-```
-
-9. desplegar imagen de prueba
-
-```bash
-kubectl run hello-cloud --image=gcr.io/google-samples/hello-app:2.0 --restart=Never --port=8080
-```
-
-10. desplegar app web de monitoreo
-
-```bash
-minikube dashboard
 ```
